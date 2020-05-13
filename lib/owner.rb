@@ -24,4 +24,8 @@ class Owner
    puts "I am a #{species}."
    "I am a #{species}."
   end
+  
+  def cats
+    Cats.all.select
+  end
 end
