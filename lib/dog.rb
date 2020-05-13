@@ -14,6 +14,6 @@ class Dog
   end
   
   def dog
-    Cats.all.filter { |cat| cat.owner == self}
+    Dats.all.filter { |dog| dog.owner == self}
   end
 end
