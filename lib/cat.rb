@@ -13,5 +13,6 @@ class Cat
     @@all
   end
   
-  
+  def cats
+    Cats
 end
