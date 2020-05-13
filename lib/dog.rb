@@ -16,4 +16,6 @@ class Dog
   def dog
     Dats.all.filter { |dog| dog.owner == self}
   end
+  
+  
 end
