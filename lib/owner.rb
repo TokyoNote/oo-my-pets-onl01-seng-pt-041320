@@ -9,10 +9,13 @@ class Owner
   end
   
   def self.all
-    puts self
     @@all
   end
     
+  def self.count
+    all.size
+  end
+  
   def say_species
    puts "I am a #{species}."
    "I am a #{species}."
