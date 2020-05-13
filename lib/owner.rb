@@ -11,6 +11,8 @@ class Owner
   def self.all
     @@all
   end
+  
+  def
     
   def self.count
     all.size
@@ -26,6 +28,6 @@ class Owner
   end
   
   def cats
-    Cats.all.filter{|cat| cat.owner == self}
+    Cats.all.filter { |cat| cat.owner == self}
   end
 end
