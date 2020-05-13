@@ -1,10 +1,18 @@
 class Owner
   attr_reader :name, :species
+  @@all = []
   def initialize(name)
     @name = name
     @species = 'human'
+    @@all << self
+    puts self
   end
   
+  def self.all
+    puts self
+    @@all
+  end
+    
   def say_species
    puts "I am a #{species}."
    "I am a #{species}."
