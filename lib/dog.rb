@@ -16,7 +16,6 @@ class Cat
     all.select { |cat| cat.owner == owner }
   end
 end
-# frozen_string_literal: true
 class Dog
   attr_reader :name
   attr_accessor :owner, :mood
