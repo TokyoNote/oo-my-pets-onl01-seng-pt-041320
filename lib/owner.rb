@@ -5,7 +5,6 @@ class Owner
     @name = name
     @species = 'human'
     @@all << self
-    puts self
   end
   
   def self.all
@@ -26,6 +25,9 @@ class Owner
   end
   
   def cats
-    Cats.all.filter { |cat| cat.owner == self}
+    Cats.all.select { |cat| cat.owner == self}
   end
+  
+  def buy_cat(name)
+    Cat.new(name, self)
 end
